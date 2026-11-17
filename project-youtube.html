@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Channel — Ahmed Samy</title>
+  <meta name="description" content="Explore Ahmed Samy's YouTube channel, featured educational videos, audience reach, and community engagement.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YouTube Channel — Ahmed Samy">
+  <meta property="og:description" content="Explore Ahmed Samy's YouTube channel, featured educational videos, audience reach, and community engagement.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="YouTube Channel — Ahmed Samy">
+  <meta name="twitter:description" content="Explore Ahmed Samy's YouTube channel, featured educational videos, audience reach, and community engagement.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon-white.svg?v=3" id="faviconSvg">
+  <link rel="shortcut icon" href="assets/icons/favicon-white.svg?v=3" id="faviconShortcut">
+  <link rel="apple-touch-icon" href="assets/icons/favicon-black.svg?v=3">
+  <script>
+    (function(){
+      var t=localStorage.getItem('yt-theme');
+      var d=window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(t==='light'||(!t&&!d)) document.documentElement.classList.add('light');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+
+  <style>
+    /* ── RESET & VARIABLES ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    :root {
+      --red:       #e8230a;
+      --red-dark:  #b51a07;
+      --red-dim:   rgba(232,35,10,0.12);
+      --rule:      rgba(255,255,255,0.09);
+      --bg:        #111;
+      --card:      #1c1c1c;
+      --card2:     #242424;
+      --text:      #e8e4dc;
+      --text-head: #f0ece4;
+      --text-mid:  #9a9589;
+      --text-muted:#6a6660;
+      --text-dim:  #706c65;
+      --text-faint:#5a5650;
+      --nav-bg:    rgba(13,13,13,0.88);
+      --nav-border:rgba(255,255,255,0.09);
+      --hero-vignette: rgba(13,13,13,0.5);
+      --ticker-bg: #181818;
+      --stat-hover:#1c1c1c;
+      --geo-track: rgba(255,255,255,0.06);
+      --insights-bg: rgba(255,255,255,0.03);
+      --cta-ghost:  rgba(255,255,255,0.012);
+    }
+
+    html.light {
+      --rule:      rgba(0,0,0,0.08);
+      --bg:        #f7f4ef;
+      --card:      #ffffff;
+      --card2:     #f0ece5;
+      --text:      #2a2520;
+      --text-head: #1a1510;
+      --text-mid:  #6b6560;
+      --text-muted:#8a8480;
+      --text-dim:  #7a7570;
+      --text-faint:#9a9590;
+      --nav-bg:    rgba(247,244,239,0.92);
+      --nav-border:rgba(0,0,0,0.08);
+      --hero-vignette: rgba(247,244,239,0.4);
+      --ticker-bg: #ede9e2;
+      --stat-hover:#ffffff;
+      --geo-track: rgba(0,0,0,0.07);
+      --insights-bg: rgba(0,0,0,0.03);
+      --cta-ghost:  rgba(0,0,0,0.015);
+    }
+
+    /* Smooth transition for all theme-dependent properties */
+    *, *::before, *::after {
+      transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
+    }
+
+    /* But NOT for transforms/opacity (would break animations) */
+    .reveal, .geo-fill, .stat-block::before {
+      transition: opacity 0.7s ease, transform 0.7s ease, background 0.35s ease, border-color 0.35s ease;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE TEXTURE ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 1;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 64px;
+      border-bottom: 1px solid var(--nav-border);
+      background: var(--nav-bg);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      color: var(--text-head);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--red); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border: 1px solid var(--rule);
+      border-radius: 100px;
+      color: var(--text-mid);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .nav-back:hover { border-color: var(--red); color: var(--red); }
+    .nav-back svg { transition: transform 0.2s; }
+    .nav-back:hover svg { transform: translateX(-3px); }
+
+    /* ── THEME TOGGLE ── */
+    .theme-toggle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--rule);
+      background: transparent;
+      color: var(--text-mid);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover { border-color: var(--red); color: var(--red); }
+
+    /* icon swap */
+    .icon-moon { display: block; }
+    .icon-sun  { display: none; }
+    html.light .icon-moon { display: none; }
+    html.light .icon-sun  { display: block; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding-top: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* big diagonal accent */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 55vw;
+      height: 130vh;
+      background: radial-gradient(ellipse at 60% 40%, var(--red) 0%, #8b0000 100%);
+      clip-path: ellipse(55% 75% at 80% 50%);
+      opacity: 0.07;
+      pointer-events: none;
+    }
+
+    .hero-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 80px 40px 60px;
+      width: 100%;
+    }
+
+    .hero-left { padding-right: 60px; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--red);
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 7vw, 7rem);
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+      color: var(--text-head);
+      margin-bottom: 36px;
+    }
+
+    .hero-title .slash {
+      color: var(--red);
+      font-size: 0.6em;
+    }
+
+    .hero-desc {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: var(--text-mid);
+      max-width: 420px;
+      margin-bottom: 48px;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--red);
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 16px 32px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .hero-cta:hover { background: var(--red-dark); transform: translateY(-2px); }
+
+    /* Hero image panel */
+    .hero-right {
+      position: relative;
+      height: 520px;
+    }
+
+    .hero-banner-wrap {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .hero-banner-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7) contrast(1.05);
+    }
+
+    /* subtle vignette over banner */
+    .hero-banner-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--hero-vignette) 0%, transparent 60%);
+    }
+
+    /* live badge */
+    .live-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--red);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      animation: pulse 1.4s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.7); }
+    }
+
+    /* ── TICKER STRIP ── */
+    .ticker {
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      background: var(--ticker-bg);
+      overflow: hidden;
+      padding: 14px 0;
+    }
+
+    .ticker-inner {
+      display: flex;
+      gap: 0;
+      white-space: nowrap;
+      animation: ticker 28s linear infinite;
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0 40px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .ticker-item strong { color: var(--red); font-weight: 500; }
+    .ticker-divider { color: var(--rule); font-size: 18px; }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── STATS ── */
+    .stats-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 100px 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .stat-block {
+      background: var(--card);
+      padding: 52px 48px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .stat-block:hover { background: var(--stat-hover); }
+
+    .stat-block::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 48px;
+      width: 40px; height: 3px;
+      background: var(--red);
+      border-radius: 100px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .stat-block:hover::before { transform: scaleX(1); }
+
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 5vw, 5.5rem);
+      line-height: 1;
+      color: var(--text-head);
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+
+    .stat-num sub {
+      font-size: 0.4em;
+      vertical-align: baseline;
+      margin-left: 2px;
+      color: var(--red);
+    }
+
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .stat-desc {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-faint);
+      line-height: 1.6;
+      max-width: 220px;
+    }
+
+    /* ── SECTION BASE ── */
+    .section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 100px 40px;
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      gap: 28px;
+      margin-bottom: 64px;
+    }
+
+    .section-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      padding-top: 6px;
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.2rem, 4vw, 3.8rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      color: var(--text-head);
+    }
+
+    .section-subtitle {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text-faint);
+      margin-top: 10px;
+    }
+
+    /* ── OVERVIEW ── */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .overview-lead {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text-mid);
+      margin-bottom: 32px;
+      border-left: 2px solid var(--red);
+      padding-left: 24px;
+    }
+
+    .overview-body {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--text-dim);
+      margin-bottom: 40px;
+    }
+
+    /* checklist */
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .check-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    .check-list li::before {
+      content: '→';
+      color: var(--red);
+      font-size: 13px;
+      margin-top: 1px;
+    }
+
+    .check-list li strong { color: var(--text); }
+
+    /* tool cards */
+    .tool-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .tool-card {
+      background: var(--card);
+      padding: 22px 26px;
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 16px;
+      align-items: start;
+      border-radius: 16px;
+      border-left: 3px solid transparent;
+    }
+
+    .tool-card:hover {
+      background: var(--card2);
+      border-left-color: var(--red);
+    }
+
+    .tool-icon {
+      width: 36px; height: 36px;
+      background: var(--red-dim);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .tool-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .tool-list {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── DIVIDER ── */
+    .h-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── TOP CONTENT ── */
+    .video-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .video-row {
+      display: grid;
+      grid-template-columns: 48px 1fr auto;
+      gap: 28px;
+      align-items: center;
+      padding: 28px 32px;
+      background: var(--card);
+      cursor: default;
+      border-radius: 18px;
+      border-left: 3px solid transparent;
+    }
+
+    .video-row:hover {
+      background: var(--card2);
+      border-left-color: var(--red);
+    }
+
+    .video-rank {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.4rem;
+      color: var(--rule);
+      line-height: 1;
+      user-select: none;
+    }
+
+    .video-name {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .video-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .video-hours {
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .video-hours-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--red);
+      line-height: 1;
+    }
+
+    .video-hours-label {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .video-row.featured-video {
+      border-left-color: var(--red);
+      background:
+        linear-gradient(120deg, rgba(232,35,10,0.16), rgba(232,35,10,0.04) 42%, transparent 78%),
+        var(--card);
+    }
+
+    .video-row.featured-video:hover {
+      background:
+        linear-gradient(120deg, rgba(232,35,10,0.2), rgba(232,35,10,0.07) 44%, transparent 80%),
+        var(--card2);
+    }
+
+    .video-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 9px 16px;
+      border-radius: 100px;
+      border: 1px solid rgba(232,35,10,0.45);
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .video-link:hover {
+      background: var(--red-dark);
+      border-color: var(--red);
+    }
+
+    .video-media {
+      width: 210px;
+      flex-shrink: 0;
+    }
+
+    .video-thumb-link {
+      position: relative;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid var(--rule);
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+    }
+
+    .video-thumb-link::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 36%, rgba(0,0,0,0.52) 100%);
+      z-index: 1;
+    }
+
+    .video-thumb {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      transform: scale(1.01);
+      transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    .video-thumb-link:hover .video-thumb {
+      transform: scale(1.06);
+      filter: saturate(1.12);
+    }
+
+    .video-play-pill {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 11px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(16,16,16,0.78);
+      color: #fff;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+      backdrop-filter: blur(8px);
+    }
+
+    html.light .video-play-pill {
+      background: rgba(255,255,255,0.88);
+      color: #2a2520;
+      border-color: rgba(0,0,0,0.12);
+    }
+
+    /* ── GEOGRAPHY ── */
+    .geo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .geo-left {
+      background: var(--card);
+      padding: 48px;
+      border-radius: 20px;
+    }
+
+    .geo-intro {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    .geo-bars { display: flex; flex-direction: column; gap: 18px; }
+
+    .geo-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .geo-country {
+      font-size: 13px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .geo-pct {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      color: var(--text-head);
+    }
+
+    .geo-track {
+      height: 6px;
+      background: var(--geo-track);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .geo-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--red), #ff6b4a);
+      border-radius: 100px;
+      transform-origin: left;
+      animation: barFill 1.2s cubic-bezier(.22,1,.36,1) both;
+    }
+
+    @keyframes barFill {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+
+    .geo-right {
+      background: var(--card2);
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 20px;
+    }
+
+    .geo-highlight {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 6vw, 6rem);
+      line-height: 1;
+      color: var(--red);
+      letter-spacing: 0.02em;
+    }
+
+    .geo-highlight-label {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 8px;
+      margin-bottom: 32px;
+    }
+
+    .insights-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .insights-list li {
+      font-size: 13px;
+      color: var(--text-dim);
+      padding: 12px 16px;
+      background: var(--insights-bg);
+      border-left: 3px solid var(--red-dim);
+      border-radius: 0 10px 10px 0;
+      line-height: 1.5;
+    }
+
+    /* ── COMMENTS ── */
+    .comments-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .comment-card {
+      background: var(--card);
+      padding: 36px 40px;
+      position: relative;
+      border-radius: 20px;
+    }
+
+    .comment-card:hover { background: var(--card2); }
+
+    .comment-quote {
+      font-size: 60px;
+      line-height: 1;
+      color: var(--red);
+      opacity: 0.3;
+      font-family: 'Lora', serif;
+      position: absolute;
+      top: 16px; left: 32px;
+    }
+
+    .comment-arabic {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 10px;
+      direction: rtl;
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .comment-translation {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ── ENGAGEMENT METRICS ── */
+    .metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .metric-block {
+      background: var(--card);
+      padding: 36px 40px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      border-radius: 20px;
+    }
+
+    .metric-block:hover { background: var(--card2); }
+
+    .metric-icon {
+      width: 42px; height: 42px;
+      background: var(--red-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+
+    .metric-label {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .metric-value {
+      font-family: 'Lora', serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .metric-note {
+      font-size: 12px;
+      color: var(--text-faint);
+      line-height: 1.5;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      padding: 120px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: 'COLLAB';
+      position: absolute;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(10rem, 20vw, 22rem);
+      color: var(--cta-ghost);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      pointer-events: none;
+      letter-spacing: 0.05em;
+    }
+
+    .cta-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .cta-eyebrow::before,
+    .cta-eyebrow::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--red);
+      opacity: 0.5;
+    }
+
+    .cta-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 6vw, 6rem);
+      letter-spacing: 0.03em;
+      color: var(--text-head);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .cta-sub {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      margin-bottom: 52px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .cta-buttons {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: #fff;
+      padding: 16px 40px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-mid);
+      padding: 15px 40px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 100px;
+      border: 1px solid var(--rule);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-ghost:hover { border-color: var(--text-mid); color: var(--text-head); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 32px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--text-faint);
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── SOFT SHADOWS & HOVER LIFTS ── */
+    .stat-block,
+    .tool-card,
+    .video-row,
+    .geo-left,
+    .geo-right,
+    .comment-card,
+    .metric-block {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px var(--rule);
+      transition: background-color 0.35s ease, border-color 0.35s ease,
+                  box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .stat-block:hover,
+    .tool-card:hover,
+    .video-row:hover,
+    .comment-card:hover,
+    .metric-block:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12), 0 0 0 1px var(--rule);
+      transform: translateY(-3px);
+    }
+
+    html.light .stat-block,
+    html.light .tool-card,
+    html.light .video-row,
+    html.light .geo-left,
+    html.light .geo-right,
+    html.light .comment-card,
+    html.light .metric-block {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07), 0 0 0 1px var(--rule);
+    }
+
+    html.light .stat-block:hover,
+    html.light .tool-card:hover,
+    html.light .video-row:hover,
+    html.light .comment-card:hover,
+    html.light .metric-block:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.13), 0 0 0 1px rgba(0,0,0,0.06);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero-body { grid-template-columns: 1fr; gap: 48px; }
+      .hero-left { padding-right: 0; }
+      .hero-right { height: 360px; }
+      .stats-section { grid-template-columns: 1fr 1fr; }
+      .overview-grid { grid-template-columns: 1fr; gap: 48px; }
+      .geo-grid { grid-template-columns: 1fr; }
+      .comments-grid { grid-template-columns: 1fr; }
+      .metrics-strip { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 20px; }
+      .hero-body { padding: 60px 20px 40px; }
+      .stats-section { grid-template-columns: 1fr; padding: 60px 20px; }
+      .stat-block { padding: 36px 24px; }
+      .section { padding: 60px 20px; }
+      .geo-left, .geo-right { padding: 32px 24px; }
+      .video-row { grid-template-columns: 36px 1fr; padding: 20px; gap: 16px; }
+      .video-hours { display: none; }
+      .video-row.featured-video .video-media { grid-column: 2; width: 100%; max-width: 320px; margin-top: 4px; }
+      .comments-grid { grid-template-columns: 1fr; }
+      .comment-card { padding: 28px 24px; }
+      .cta-section { padding: 80px 20px; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Ahmed<span>.Media</span></a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-back">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+        <span class="icon-moon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </span>
+        <span class="icon-sun">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="hero-left">
+        <p class="eyebrow">Educational Content</p>
+        <h1 class="hero-title">
+          YouTube<br>
+          Channel<br>
+          <span class="slash">/</span> Learning<br>Impact
+        </h1>
+        <p class="hero-desc">
+          An educational content creation project — video essays on science, history, and global topics. Built from zero to 7,000+ views with strong audience engagement across North Africa and the Middle East.
+        </p>
+        <a href="#overview" class="hero-cta">
+          Explore Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-right">
+        <div class="hero-banner-wrap">
+          <img src="assets/images/channels4banner.jpg" alt="YouTube Channel Banner" width="1060" height="175" fetchpriority="high" decoding="async">
+          <div class="live-badge">
+            <span class="live-dot"></span>
+            Educational Content
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-inner">
+        <!-- duplicated for seamless loop -->
+        <span class="ticker-item"><strong>7,056</strong> Total Views <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>284.1 hrs</strong> Watch Time <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>46.7%</strong> MENA Audience <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>100%</strong> Positive Sentiment <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>#1 Video</strong> 109 hrs Watch Time <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>7 Countries</strong> Geographic Reach <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>7,056</strong> Total Views <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>284.1 hrs</strong> Watch Time <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>46.7%</strong> MENA Audience <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>100%</strong> Positive Sentiment <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>#1 Video</strong> 109 hrs Watch Time <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>7 Countries</strong> Geographic Reach <span class="ticker-divider">·</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-section reveal" id="overview">
+    <div class="stat-block">
+      <div class="stat-num">7,056</div>
+      <div class="stat-label">Total Channel Views</div>
+      <p class="stat-desc">Organic reach across North Africa, the Middle East, and beyond.</p>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">284<sub>hrs</sub></div>
+      <div class="stat-label">Total Watch Time</div>
+      <p class="stat-desc">High audience retention — over 284 hours of cumulative viewing.</p>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">109<sub>hrs</sub></div>
+      <div class="stat-label">Top Video</div>
+      <p class="stat-desc">"Climate Change: What If Global Warming Disappeared?" — the channel's standout hit.</p>
+    </div>
+  </div>
+
+  <hr class="h-rule">
+
+  <!-- OVERVIEW -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">01 —</div>
+      <div>
+        <h2 class="section-title">Project Overview</h2>
+        <p class="section-subtitle">Strategy, tools, and the journey from zero</p>
+      </div>
+    </div>
+
+    <div class="overview-grid">
+      <div>
+        <p class="overview-lead">
+          Starting from scratch, this project built a growing community of learners drawn to science, history, and global affairs — reaching 7,056 views and 284 hours of watch time through consistent, data-driven content.
+        </p>
+        <p class="overview-body">
+          Through careful audience analysis and iterative content strategy, expertise developed across the full production pipeline — from script to screen. The channel demonstrates the ability to craft compelling educational narratives that resonate with diverse geographic audiences, particularly Arabic-speaking learners across MENA.
+        </p>
+
+        <ul class="check-list">
+          <li><span><strong>7,056 Total Views</strong> with strong organic reach across multiple markets</span></li>
+          <li><span><strong>284.1 Hours Watch Time</strong> demonstrating sustained audience retention</span></li>
+          <li><span><strong>Top Video: 109 hours</strong> — "Climate Change: What If Global Warming Disappeared?"</span></li>
+          <li><span><strong>46.7% MENA Reach</strong> — Egypt, Algeria, Morocco, and Saudi Arabia</span></li>
+          <li><span><strong>100% positive</strong> community engagement and supportive feedback</span></li>
+        </ul>
+      </div>
+
+      <div class="tool-cards">
+        <div class="tool-card">
+          <div class="tool-icon">🎬</div>
+          <div>
+            <div class="tool-name">Production</div>
+            <div class="tool-list">OBS Studio · Adobe Premiere Pro · Final Cut Pro</div>
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🎨</div>
+          <div>
+            <div class="tool-name">Design & Graphics</div>
+            <div class="tool-list">Photoshop · Figma · Canva · After Effects</div>
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">📊</div>
+          <div>
+            <div class="tool-name">Analytics</div>
+            <div class="tool-list">YouTube Analytics · TubeBuddy · VidIQ</div>
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🎙</div>
+          <div>
+            <div class="tool-name">Audio Production</div>
+            <div class="tool-list">Audacity · Adobe Audition · DaVinci Resolve</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="h-rule">
+
+  <!-- TOP CONTENT -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">02 —</div>
+      <div>
+        <h2 class="section-title">Top Performing Content</h2>
+        <p class="section-subtitle">Most-watched videos and their audience impact</p>
+      </div>
+    </div>
+
+    <div class="video-list">
+      <div class="video-row">
+        <div class="video-rank">01</div>
+        <div class="video-info">
+          <div class="video-name">Climate Change: What If Global Warming Disappeared?</div>
+          <div class="video-desc">A thought-provoking exploration of climate science and environmental consequences. The channel's highest-performing video by a significant margin.</div>
+        </div>
+        <div class="video-hours">
+          <div class="video-hours-num">109</div>
+          <div class="video-hours-label">Hours Watched</div>
+        </div>
+      </div>
+
+      <div class="video-row">
+        <div class="video-rank">02</div>
+        <div class="video-info">
+          <div class="video-name">Albert Einstein: The Mind That Changed the World</div>
+          <div class="video-desc">A biographical deep-dive into one of history's greatest scientific minds, showcasing the enduring appeal of educational storytelling.</div>
+        </div>
+        <div class="video-hours">
+          <div class="video-hours-num">71.4</div>
+          <div class="video-hours-label">Hours Watched</div>
+        </div>
+      </div>
+
+      <div class="video-row">
+        <div class="video-rank">03+</div>
+        <div class="video-info">
+          <div class="video-name">Additional Notable Videos</div>
+          <div class="video-desc">Combined watch time across multiple videos, reflecting diverse audience interests in science, history, and educational storytelling.</div>
+        </div>
+        <div class="video-hours">
+          <div class="video-hours-num">53.8</div>
+          <div class="video-hours-label">Hours Collective</div>
+        </div>
+      </div>
+
+      <div class="video-row featured-video">
+        <div class="video-rank">NEW</div>
+        <div class="video-info">
+          <div class="video-name">CS50 Final Project - Ahmed Samy</div>
+          <div class="video-desc">A featured project walkthrough that highlights the final concept, execution details, and technical polish.</div>
+          <a href="https://youtu.be/yIupIolg29c" target="_blank" rel="noopener" class="video-link" aria-label="Watch CS50 Final Project video on YouTube">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Watch on YouTube
+          </a>
+        </div>
+        <div class="video-media">
+          <a href="https://youtu.be/yIupIolg29c" target="_blank" rel="noopener" class="video-thumb-link" aria-label="Open CS50 Final Project video">
+            <img src="https://i.ytimg.com/vi/yIupIolg29c/hqdefault.jpg" alt="CS50 Final Project - Ahmed Samy thumbnail" class="video-thumb" loading="lazy" decoding="async" width="480" height="360">
+            <span class="video-play-pill">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              Play Video
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="h-rule">
+
+  <!-- GEOGRAPHY -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">03 —</div>
+      <div>
+        <h2 class="section-title">Audience & Geographic Reach</h2>
+        <p class="section-subtitle">Strong presence across North Africa and the Middle East</p>
+      </div>
+    </div>
+
+    <div class="geo-grid">
+      <div class="geo-left">
+        <p class="geo-intro">
+          Egypt alone accounts for 13.8% of all views, with strong representation across Algeria, Morocco, Saudi Arabia, and Iraq — a testament to the channel's cultural resonance with Arabic-speaking audiences.
+        </p>
+
+        <div class="geo-bars">
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇪🇬 Egypt</span>
+              <span class="geo-pct">13.8%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:13.8%"></div></div>
+          </div>
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇩🇿 Algeria</span>
+              <span class="geo-pct">7.8%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:7.8%; animation-delay:.1s"></div></div>
+          </div>
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇲🇦 Morocco</span>
+              <span class="geo-pct">7.3%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:7.3%; animation-delay:.2s"></div></div>
+          </div>
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇸🇦 Saudi Arabia</span>
+              <span class="geo-pct">7.3%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:7.3%; animation-delay:.3s"></div></div>
+          </div>
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇮🇶 Iraq</span>
+              <span class="geo-pct">7.2%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:7.2%; animation-delay:.4s"></div></div>
+          </div>
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇹🇳 Tunisia</span>
+              <span class="geo-pct">0.9%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:0.9%; animation-delay:.5s"></div></div>
+          </div>
+          <div class="geo-row">
+            <div class="geo-meta">
+              <span class="geo-country">🇯🇴 Jordan</span>
+              <span class="geo-pct">0.6%</span>
+            </div>
+            <div class="geo-track"><div class="geo-fill" style="width:0.6%; animation-delay:.6s"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-right">
+        <div>
+          <div class="geo-highlight">46.7%</div>
+          <div class="geo-highlight-label">From North Africa &amp; the Middle East</div>
+        </div>
+
+        <ul class="insights-list">
+          <li>Primary audience: Arabic-speaking learners seeking educational content</li>
+          <li>Content interests span science, history, and global affairs</li>
+          <li>Strong retention indicating genuine educational value</li>
+          <li>Growth opportunity: underrepresented Western &amp; Southeast Asian markets</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="h-rule">
+
+  <!-- COMMUNITY -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">04 —</div>
+      <div>
+        <h2 class="section-title">Community Engagement</h2>
+        <p class="section-subtitle">Building meaningful connections with a supportive audience</p>
+      </div>
+    </div>
+
+    <div class="comments-grid">
+      <div class="comment-card">
+        <span class="comment-quote">"</span>
+        <p class="comment-arabic">الله يوفقك و يسعدك يارب</p>
+        <p class="comment-translation">May God grant you success and happiness</p>
+      </div>
+      <div class="comment-card">
+        <span class="comment-quote">"</span>
+        <p class="comment-arabic">محتوى جميل</p>
+        <p class="comment-translation">Beautiful content</p>
+      </div>
+      <div class="comment-card">
+        <span class="comment-quote">"</span>
+        <p class="comment-arabic">مبدع</p>
+        <p class="comment-translation">Creative</p>
+      </div>
+      <div class="comment-card">
+        <span class="comment-quote">"</span>
+        <p class="comment-arabic">بالتوفيق يا رب</p>
+        <p class="comment-translation">Best of luck — God willing</p>
+      </div>
+    </div>
+
+    <div class="metrics-strip">
+      <div class="metric-block">
+        <div class="metric-icon">💬</div>
+        <div>
+          <div class="metric-label">Comment Sentiment</div>
+          <div class="metric-value">100% Positive</div>
+          <div class="metric-note">All community feedback is supportive and encouraging — zero negative interactions.</div>
+        </div>
+      </div>
+      <div class="metric-block">
+        <div class="metric-icon">⏱</div>
+        <div>
+          <div class="metric-label">Avg Watch Duration</div>
+          <div class="metric-value">High Retention</div>
+          <div class="metric-note">284.1 total hours across videos indicates audiences genuinely engage to completion.</div>
+        </div>
+      </div>
+      <div class="metric-block">
+        <div class="metric-icon">🌍</div>
+        <div>
+          <div class="metric-label">Community Type</div>
+          <div class="metric-value">Supportive &amp; Engaged</div>
+          <div class="metric-note">Interactive audience providing constructive feedback and genuine encouragement.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section reveal">
+    <p class="cta-eyebrow">Let's Work Together</p>
+    <h2 class="cta-title">Interested in Collaborating?</h2>
+    <p class="cta-sub">
+      Open to content creation partnerships, educational collaborations, or any projects that inform and inspire.
+    </p>
+    <div class="cta-buttons">
+      <a href="index.html#contact" class="btn-primary">Get In Touch</a>
+      <a href="index.html" class="btn-ghost">Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Ahmed Samy — All rights reserved</span>
+    <span>YouTube Channel Project</span>
+  </footer>
+
+  <script>
+    /* ── THEME TOGGLE ── */
+    const html = document.documentElement;
+    const toggleBtn = document.getElementById('theme-toggle');
+    const faviconSvg = document.getElementById('faviconSvg');
+    const faviconShortcut = document.getElementById('faviconShortcut');
+    function syncFavicon(){
+      const icon = html.classList.contains('light')
+        ? 'assets/icons/favicon-black.svg?v=3'
+        : 'assets/icons/favicon-white.svg?v=3';
+      if (faviconSvg) faviconSvg.href = icon;
+      if (faviconShortcut) faviconShortcut.href = icon;
+    }
+    syncFavicon();
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        html.classList.toggle('light');
+        localStorage.setItem('yt-theme', html.classList.contains('light') ? 'light' : 'dark');
+        syncFavicon();
+      });
+    }
+
+    /* ── SCROLL REVEAL ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 60);
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    revealEls.forEach(el => revealObs.observe(el));
+  </script>
+
+</body>
+</html>

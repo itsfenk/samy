@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Service — Ahmed Samy</title>
+  <meta name="description" content="Explore Ahmed Samy's community service projects, volunteer work, mentorship, and recognition.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Community Service — Ahmed Samy">
+  <meta property="og:description" content="Explore Ahmed Samy's community service projects, volunteer work, mentorship, and recognition.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Community Service — Ahmed Samy">
+  <meta name="twitter:description" content="Explore Ahmed Samy's community service projects, volunteer work, mentorship, and recognition.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon-white.svg?v=3" id="faviconSvg">
+  <link rel="shortcut icon" href="assets/icons/favicon-white.svg?v=3" id="faviconShortcut">
+  <link rel="apple-touch-icon" href="assets/icons/favicon-black.svg?v=3">
+  <script>
+    (function(){
+      var t=localStorage.getItem('yt-theme');
+      var d=window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(t==='light'||(!t&&!d)) document.documentElement.classList.add('light');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+
+  <style>
+    /* ── RESET & VARIABLES ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    :root {
+      --accent:      #e8230a;
+      --accent-dark: #b51a07;
+      --accent-dim:  rgba(232,35,10,0.12);
+      --accent-mid:  rgba(232,35,10,0.25);
+      --rule:        rgba(255,255,255,0.09);
+      --bg:          #111;
+      --card:        #1c1c1c;
+      --card2:       #242424;
+      --text:        #e8e4dc;
+      --text-head:   #f0ece4;
+      --text-mid:    #9a9589;
+      --text-muted:  #6a6660;
+      --text-dim:    #706c65;
+      --text-faint:  #5a5650;
+      --nav-bg:      rgba(13,13,13,0.88);
+      --nav-border:  rgba(255,255,255,0.09);
+      --hero-vignette: rgba(13,13,13,0.5);
+      --ticker-bg:   #181818;
+      --stat-hover:  #1c1c1c;
+      --insights-bg: rgba(255,255,255,0.03);
+      --cta-ghost:   rgba(255,255,255,0.012);
+    }
+
+    html.light {
+      --rule:        rgba(0,0,0,0.08);
+      --bg:          #f7f4ef;
+      --card:        #ffffff;
+      --card2:       #f0ece5;
+      --text:        #2a2520;
+      --text-head:   #1a1510;
+      --text-mid:    #6b6560;
+      --text-muted:  #8a8480;
+      --text-dim:    #7a7570;
+      --text-faint:  #9a9590;
+      --nav-bg:      rgba(247,244,239,0.92);
+      --nav-border:  rgba(0,0,0,0.08);
+      --hero-vignette: rgba(247,244,239,0.4);
+      --ticker-bg:   #ede9e2;
+      --stat-hover:  #ffffff;
+      --insights-bg: rgba(0,0,0,0.03);
+      --cta-ghost:   rgba(0,0,0,0.015);
+    }
+
+    /* Smooth theme transitions */
+    *, *::before, *::after {
+      transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
+    }
+
+    .reveal, .prog-fill, .stat-block::before {
+      transition: opacity 0.7s ease, transform 0.7s ease, background 0.35s ease, border-color 0.35s ease;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE TEXTURE ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 64px;
+      border-bottom: 1px solid var(--nav-border);
+      background: var(--nav-bg);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      color: var(--text-head);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-right { display: flex; align-items: center; gap: 10px; }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border: 1px solid var(--rule);
+      border-radius: 100px;
+      color: var(--text-mid);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .nav-back:hover { border-color: var(--accent); color: var(--accent); }
+    .nav-back svg { transition: transform 0.2s; }
+    .nav-back:hover svg { transform: translateX(-3px); }
+
+    .theme-toggle {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--rule);
+      background: transparent;
+      color: var(--text-mid);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+    .icon-moon { display: block; }
+    .icon-sun  { display: none; }
+    html.light .icon-moon { display: none; }
+    html.light .icon-sun  { display: block; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding-top: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%; right: -5%;
+      width: 55vw; height: 130vh;
+      background: radial-gradient(ellipse at 60% 40%, var(--accent) 0%, #3b0764 100%);
+      clip-path: ellipse(55% 75% at 80% 50%);
+      opacity: 0.07;
+      pointer-events: none;
+    }
+
+    .hero-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 80px 40px 60px;
+      width: 100%;
+    }
+
+    .hero-left { padding-right: 60px; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px; height: 1px;
+      background: var(--accent);
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 7vw, 7rem);
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+      color: var(--text-head);
+      margin-bottom: 36px;
+    }
+
+    .hero-title .slash { color: var(--accent); font-size: 0.6em; }
+
+    .hero-desc {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: var(--text-mid);
+      max-width: 420px;
+      margin-bottom: 48px;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 16px 32px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .hero-cta:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+    /* Hero right — stacked cert preview cards */
+    .hero-right {
+      position: relative;
+      height: 520px;
+    }
+
+    .hero-cert-stack {
+      position: absolute;
+      inset: 0;
+    }
+
+    .cert-preview {
+      position: absolute;
+      background: var(--card);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+      border: 1px solid var(--rule);
+    }
+
+    .cert-preview img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cert-preview-1 {
+      width: 72%; height: 65%;
+      top: 0; right: 0;
+      transform: rotate(2deg);
+      z-index: 2;
+    }
+
+    .cert-preview-2 {
+      width: 65%; height: 60%;
+      bottom: 0; left: 0;
+      transform: rotate(-2.5deg);
+      z-index: 1;
+    }
+
+    /* accent glow behind stack */
+    .hero-cert-stack::before {
+      content: '';
+      position: absolute;
+      top: 20%; left: 15%;
+      width: 60%; height: 60%;
+      background: var(--accent);
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.08;
+      z-index: 0;
+    }
+
+    /* live badge */
+    .live-badge {
+      position: absolute;
+      top: 20px; left: 20px;
+      z-index: 4;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      animation: pulse 1.4s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.7); }
+    }
+
+    /* ── TICKER STRIP ── */
+    .ticker {
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      background: var(--ticker-bg);
+      overflow: hidden;
+      padding: 14px 0;
+    }
+
+    .ticker-inner {
+      display: flex;
+      white-space: nowrap;
+      animation: ticker 28s linear infinite;
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0 40px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .ticker-item strong { color: var(--accent); font-weight: 500; }
+    .ticker-divider { color: var(--rule); font-size: 18px; }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── STATS ── */
+    .stats-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 100px 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .stat-block {
+      background: var(--card);
+      padding: 52px 48px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px var(--rule);
+      transition: background-color 0.35s ease, border-color 0.35s ease,
+                  box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .stat-block:hover {
+      background: var(--stat-hover);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12), 0 0 0 1px var(--rule);
+      transform: translateY(-3px);
+    }
+
+    .stat-block::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 48px;
+      width: 40px; height: 3px;
+      background: var(--accent);
+      border-radius: 100px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .stat-block:hover::before { transform: scaleX(1); }
+
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 5vw, 5.5rem);
+      line-height: 1;
+      color: var(--text-head);
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+
+    .stat-num sub {
+      font-size: 0.4em;
+      vertical-align: baseline;
+      margin-left: 2px;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .stat-desc {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-faint);
+      line-height: 1.6;
+      max-width: 220px;
+    }
+
+    /* ── SECTION BASE ── */
+    .section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 100px 40px;
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      gap: 28px;
+      margin-bottom: 64px;
+    }
+
+    .section-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      padding-top: 6px;
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.2rem, 4vw, 3.8rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      color: var(--text-head);
+    }
+
+    .section-subtitle {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text-faint);
+      margin-top: 10px;
+    }
+
+    /* ── OVERVIEW ── */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .overview-lead {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text-mid);
+      margin-bottom: 32px;
+      border-left: 2px solid var(--accent);
+      padding-left: 24px;
+    }
+
+    .overview-body {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--text-dim);
+      margin-bottom: 40px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .check-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    .check-list li::before {
+      content: '→';
+      color: var(--accent);
+      font-size: 13px;
+      margin-top: 1px;
+    }
+
+    .check-list li strong { color: var(--text); }
+
+    /* focus area cards */
+    .focus-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .focus-card {
+      background: var(--card);
+      padding: 22px 26px;
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 16px;
+      align-items: start;
+      border-radius: 16px;
+      border-left: 3px solid transparent;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px var(--rule);
+      transition: background-color 0.35s ease, border-color 0.35s ease,
+                  box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .focus-card:hover {
+      background: var(--card2);
+      border-left-color: var(--accent);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12), 0 0 0 1px var(--rule);
+      transform: translateY(-3px);
+    }
+
+    .focus-icon {
+      width: 36px; height: 36px;
+      background: var(--accent-dim);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .focus-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .focus-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── DIVIDER ── */
+    .h-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── CERTIFICATES ── */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .cert-card {
+      background: var(--card);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px var(--rule);
+      transition: background-color 0.35s ease, border-color 0.35s ease,
+                  box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .cert-card:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.15), 0 0 0 1px var(--rule);
+      transform: translateY(-4px);
+    }
+
+    .cert-img-wrap {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--card2);
+      position: relative;
+    }
+
+    .cert-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .cert-card:hover .cert-img-wrap img { transform: scale(1.04); }
+
+    /* rotated cert fix */
+    .cert-img-wrap.rotated img {
+      object-fit: contain;
+      transform: rotate(-90deg) scale(1.3);
+    }
+    .cert-card:hover .cert-img-wrap.rotated img {
+      transform: rotate(-90deg) scale(1.35);
+    }
+
+    .cert-body { padding: 32px; }
+
+    .cert-org-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .cert-org-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      letter-spacing: 0.03em;
+      color: var(--text-head);
+      line-height: 1;
+    }
+
+    .cert-org-badge {
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background: var(--accent-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .cert-role {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .cert-desc {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+    }
+
+    .cert-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .cert-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .cert-meta-label { color: var(--text-muted); }
+    .cert-meta-value { color: var(--text); font-weight: 500; }
+
+    /* ── INITIATIVES ── */
+    .initiatives-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .initiative-row {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 20px;
+      align-items: center;
+      padding: 28px 28px;
+      background: var(--card);
+      border-radius: 18px;
+      border-left: 3px solid transparent;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px var(--rule);
+      transition: background-color 0.35s ease, border-color 0.35s ease,
+                  box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .initiative-row:hover {
+      background: var(--card2);
+      border-left-color: var(--accent);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12), 0 0 0 1px var(--rule);
+      transform: translateY(-3px);
+    }
+
+    .initiative-icon {
+      width: 52px; height: 52px;
+      background: var(--accent-dim);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .initiative-name {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .initiative-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      padding: 120px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: 'IMPACT';
+      position: absolute;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(10rem, 20vw, 22rem);
+      color: var(--cta-ghost);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      pointer-events: none;
+      letter-spacing: 0.05em;
+    }
+
+    .cta-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .cta-eyebrow::before, .cta-eyebrow::after {
+      content: '';
+      display: block;
+      width: 40px; height: 1px;
+      background: var(--accent);
+      opacity: 0.5;
+    }
+
+    .cta-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 6vw, 6rem);
+      letter-spacing: 0.03em;
+      color: var(--text-head);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .cta-sub {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      margin-bottom: 52px;
+      max-width: 460px;
+      margin-left: auto; margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .cta-buttons {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      padding: 16px 40px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-mid);
+      padding: 15px 40px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 100px;
+      border: 1px solid var(--rule);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-ghost:hover { border-color: var(--text-mid); color: var(--text-head); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 32px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--text-faint);
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    html.light .stat-block,
+    html.light .focus-card,
+    html.light .cert-card,
+    html.light .initiative-row {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07), 0 0 0 1px var(--rule);
+    }
+
+    html.light .stat-block:hover,
+    html.light .focus-card:hover,
+    html.light .cert-card:hover,
+    html.light .initiative-row:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.13), 0 0 0 1px rgba(0,0,0,0.06);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero-body { grid-template-columns: 1fr; gap: 48px; }
+      .hero-left { padding-right: 0; }
+      .hero-right { height: 360px; }
+      .stats-section { grid-template-columns: 1fr 1fr; }
+      .overview-grid { grid-template-columns: 1fr; gap: 48px; }
+      .cert-grid { grid-template-columns: 1fr; }
+      .initiatives-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 20px; }
+      .hero-body { padding: 60px 20px 40px; }
+      .stats-section { grid-template-columns: 1fr; padding: 60px 20px; }
+      .stat-block { padding: 36px 24px; }
+      .section { padding: 60px 20px; }
+      .cert-body { padding: 24px; }
+      .cta-section { padding: 80px 20px; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Ahmed<span>.Service</span></a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-back">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+        <span class="icon-moon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </span>
+        <span class="icon-sun">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="hero-left">
+        <p class="eyebrow">Community & Impact</p>
+        <h1 class="hero-title">
+          Community<br>
+          Service<br>
+          <span class="slash">/</span> Collaboration
+        </h1>
+        <p class="hero-desc">
+          Mentoring emerging talent, organizing community initiatives, and volunteering with organizations that create lasting social impact through knowledge sharing.
+        </p>
+        <a href="#overview" class="hero-cta">
+          Explore Work
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-cert-stack">
+          <div class="cert-preview cert-preview-1">
+            <img src="assets/images/ather.png" alt="Ather Certificate" width="834" height="583" decoding="async">
+          </div>
+          <div class="cert-preview cert-preview-2">
+            <img src="assets/images/resala.jpeg" alt="Resala Certificate" width="925" height="1280" decoding="async" style="transform: rotate(-90deg) scale(1.4); transform-origin: center;">
+          </div>
+          <div class="live-badge">
+            <span class="live-dot"></span>
+            Community & Impact
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-inner">
+        <span class="ticker-item"><strong>50+</strong> Mentees Supported <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>15+</strong> Events Organized <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>500+</strong> Volunteer Hours <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>2</strong> Official Certificates <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>Vice Head</strong> Graphic Design, Ather <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>Pro-Bono</strong> Nonprofit Services <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>50+</strong> Mentees Supported <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>15+</strong> Events Organized <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>500+</strong> Volunteer Hours <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>2</strong> Official Certificates <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>Vice Head</strong> Graphic Design, Ather <span class="ticker-divider">·</span></span>
+        <span class="ticker-item"><strong>Pro-Bono</strong> Nonprofit Services <span class="ticker-divider">·</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-section reveal" id="overview">
+    <div class="stat-block">
+      <div class="stat-num">50<sub>+</sub></div>
+      <div class="stat-label">Mentees Supported</div>
+      <p class="stat-desc">Aspiring creators and developers guided through career and skill development.</p>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">15<sub>+</sub></div>
+      <div class="stat-label">Events Organized</div>
+      <p class="stat-desc">Community workshops, networking events, and collaborative initiatives.</p>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">500<sub>+</sub></div>
+      <div class="stat-label">Volunteer Hours</div>
+      <p class="stat-desc">Hours dedicated to community projects, nonprofits, and cultural programs.</p>
+    </div>
+  </div>
+
+  <hr class="h-rule">
+
+  <!-- OVERVIEW -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">01 —</div>
+      <div>
+        <h2 class="section-title">About This Project</h2>
+        <p class="section-subtitle">A commitment to giving back and supporting community development</p>
+      </div>
+    </div>
+
+    <div class="overview-grid">
+      <div>
+        <p class="overview-lead">
+          This initiative showcases a commitment to social responsibility — using technical expertise and creative skills to mentor the next generation, support nonprofits, and build collaborative relationships that strengthen local ecosystems.
+        </p>
+        <p class="overview-body">
+          Through various volunteer projects and mentoring programs, the focus has been on sharing knowledge, supporting emerging talent, and contributing to meaningful community initiatives that create lasting impact beyond individual projects.
+        </p>
+
+        <ul class="check-list">
+          <li><span>Mentored <strong>50+ aspiring</strong> content creators and developers</span></li>
+          <li><span>Organized <strong>15+ community</strong> events, workshops, and initiatives</span></li>
+          <li><span>Contributed <strong>500+ volunteer hours</strong> to community projects</span></li>
+          <li><span><strong>Pro-bono services</strong> provided to nonprofit organizations</span></li>
+          <li><span>Recognized with <strong>official certificates</strong> for exceptional contribution</span></li>
+        </ul>
+      </div>
+
+      <div class="focus-cards">
+        <div class="focus-card">
+          <div class="focus-icon">🎓</div>
+          <div>
+            <div class="focus-name">Mentorship</div>
+            <div class="focus-desc">One-on-one career guidance and skill development for emerging professionals</div>
+          </div>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon">📚</div>
+          <div>
+            <div class="focus-name">Education</div>
+            <div class="focus-desc">Workshops and educational content for community learning and digital literacy</div>
+          </div>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon">🤝</div>
+          <div>
+            <div class="focus-name">Collaboration</div>
+            <div class="focus-desc">Partnership with organizations to drive social impact and community initiatives</div>
+          </div>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon">🎨</div>
+          <div>
+            <div class="focus-name">Graphic Design Leadership</div>
+            <div class="focus-desc">Led design initiatives as Vice Head of the Graphic Design Committee at Ather</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="h-rule">
+
+  <!-- CERTIFICATES -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">02 —</div>
+      <div>
+        <h2 class="section-title">Volunteer Recognition</h2>
+        <p class="section-subtitle">Official certificates from organizations I've contributed to</p>
+      </div>
+    </div>
+
+    <div class="cert-grid">
+      <!-- Certificate 1: Ather -->
+      <div class="cert-card">
+        <div class="cert-img-wrap">
+          <img src="assets/images/ather.png" alt="Ather Initiative Certificate" width="834" height="583" decoding="async">
+        </div>
+        <div class="cert-body">
+          <div class="cert-org-row">
+            <div class="cert-org-name">Ather Initiative</div>
+            <div class="cert-org-badge">🏅</div>
+          </div>
+          <div class="cert-role">Vice Head — Graphic Design Committee</div>
+          <p class="cert-desc">
+            Recognized for exemplary dedication and invaluable contributions. Led design initiatives and supported multiple volunteering works that positively impacted the community.
+          </p>
+          <div class="cert-meta">
+            <div class="cert-meta-row">
+              <span class="cert-meta-label">Date Issued</span>
+              <span class="cert-meta-value">January 8, 2026</span>
+            </div>
+            <div class="cert-meta-row">
+              <span class="cert-meta-label">Issued By</span>
+              <span class="cert-meta-value">Initiative President</span>
+            </div>
+            <div class="cert-meta-row">
+              <span class="cert-meta-label">Recognition</span>
+              <span class="cert-meta-value">Certificate of Appreciation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2: Resala -->
+      <div class="cert-card">
+        <div class="cert-img-wrap rotated">
+          <img src="assets/images/resala.jpeg" alt="Resala Volunteer Certificate" width="925" height="1280" decoding="async">
+        </div>
+        <div class="cert-body">
+          <div class="cert-org-row">
+            <div class="cert-org-name">Cultural Organization</div>
+            <div class="cert-org-badge">🌍</div>
+          </div>
+          <div class="cert-role">Volunteer Contributor</div>
+          <p class="cert-desc">
+            Participated in cultural and community initiatives promoting heritage and engagement. Contributed design expertise and organizational support to enhance program impact and reach.
+          </p>
+          <div class="cert-meta">
+            <div class="cert-meta-row">
+              <span class="cert-meta-label">Recognition</span>
+              <span class="cert-meta-value">Volunteer Certificate</span>
+            </div>
+            <div class="cert-meta-row">
+              <span class="cert-meta-label">Focus</span>
+              <span class="cert-meta-value">Cultural Heritage & Community</span>
+            </div>
+            <div class="cert-meta-row">
+              <span class="cert-meta-label">Contribution</span>
+              <span class="cert-meta-value">Design & Organizational Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="h-rule">
+
+  <!-- INITIATIVES -->
+  <section class="section reveal">
+    <div class="section-header">
+      <div class="section-num">03 —</div>
+      <div>
+        <h2 class="section-title">Community Initiatives</h2>
+        <p class="section-subtitle">Key projects and programs making a real difference</p>
+      </div>
+    </div>
+
+    <div class="initiatives-grid">
+      <div class="initiative-row">
+        <div class="initiative-icon">🎓</div>
+        <div>
+          <div class="initiative-name">Mentorship Program</div>
+          <div class="initiative-desc">Structured mentoring providing guidance on career development and professional growth in digital industries</div>
+        </div>
+      </div>
+
+      <div class="initiative-row">
+        <div class="initiative-icon">💻</div>
+        <div>
+          <div class="initiative-name">Technical Workshops</div>
+          <div class="initiative-desc">Hands-on workshops teaching web development, design, and digital skills to community members</div>
+        </div>
+      </div>
+
+      <div class="initiative-row">
+        <div class="initiative-icon">🔗</div>
+        <div>
+          <div class="initiative-name">Community Networking Events</div>
+          <div class="initiative-desc">Organizing gatherings that connect creators, developers, and professionals for meaningful collaboration</div>
+        </div>
+      </div>
+
+      <div class="initiative-row">
+        <div class="initiative-icon">❤️</div>
+        <div>
+          <div class="initiative-name">Nonprofit Support</div>
+          <div class="initiative-desc">Providing pro-bono technical services and design expertise to support local organizations and causes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section reveal">
+    <p class="cta-eyebrow">Let's Make a Difference</p>
+    <h2 class="cta-title">Let's Collaborate & Create Impact</h2>
+    <p class="cta-sub">
+      Open to community projects, mentorship opportunities, and initiatives that create meaningful, lasting change.
+    </p>
+    <div class="cta-buttons">
+      <a href="index.html#contact" class="btn-primary">Connect With Me</a>
+      <a href="index.html" class="btn-ghost">Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Ahmed Samy — All rights reserved</span>
+    <span>Community Service Project</span>
+  </footer>
+
+  <script>
+    /* ── THEME TOGGLE ── */
+    const html = document.documentElement;
+    const toggleBtn = document.getElementById('theme-toggle');
+    const faviconSvg = document.getElementById('faviconSvg');
+    const faviconShortcut = document.getElementById('faviconShortcut');
+    function syncFavicon(){
+      const icon = html.classList.contains('light')
+        ? 'assets/icons/favicon-black.svg?v=3'
+        : 'assets/icons/favicon-white.svg?v=3';
+      if (faviconSvg) faviconSvg.href = icon;
+      if (faviconShortcut) faviconShortcut.href = icon;
+    }
+    syncFavicon();
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        html.classList.toggle('light');
+        localStorage.setItem('yt-theme', html.classList.contains('light') ? 'light' : 'dark');
+        syncFavicon();
+      });
+    }
+
+    /* ── SCROLL REVEAL ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 60);
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    revealEls.forEach(el => revealObs.observe(el));
+  </script>
+
+</body>
+</html>

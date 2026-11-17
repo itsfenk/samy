@@ -1,0 +1,45 @@
+:focus-visible {
+  outline: 2px solid var(--accent, #e8230a) !important;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10001;
+  padding: 10px 14px;
+  border: 2px solid var(--accent, #e8230a);
+  border-radius: 8px;
+  background: var(--card, var(--cream, #fff));
+  color: var(--text, var(--ink, #111));
+  transform: translateY(calc(-100% - 12px));
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .photo-card {
+    opacity: 1 !important;
+  }
+}
